@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="MainPage.css">
+    </head>
+    <body>
+        <audio id="yay" src="assets/yay.mp3"></audio>
+        <audio id="misery" src="assets/misery.mp3"></audio>
+
+        <div class="giftPage">
+        <p class="text" id="text1">HAPPY BIRTHDAY EVELYN</p>
+        <p class="text" id="text2">CLICK TO OPEN YOUR GIFT!</p>
+        <img src="assets/evelynGiftIdle.gif" class="gift" id="giftId">
+        </div>
+        <div class="menuPage" style="display: none;">
+            <p class="text" id="text3">HAPPY BIRTHDAY!</p>
+            <p class="text" id="text4">MAY THIS YEAR BRING YOU MORE FOOD TO EAT FATTY</p>
+            <p class="text" id="text5">CLICK ONE OF MY GIFTS FOR YOU</p>
+            <p class="text" id="text6">EDITS</p>
+            <p class="text" id="text7">MUSIC</p>
+            <p class="text" id="text8">MESSAGE</p>
+            <img src="assets/evelynCamera.gif" class="menuIcon" id="cameraIcon">
+            <img src="assets/evelynDisc.gif" class="menuIcon" id="discIcon">
+            <img src="assets/evelynPaper.gif" class="menuIcon" id="paperIcon">
+        </div>
+        <div class="musicPage" style="display: none;">
+            <p class="text" id="text9">THIS SONG REMINDS ME OF YOU!^^</p>
+            <img src="assets/evelynMusicBox.gif" class="musicPlayer" id="musicPlayer">
+            <img src="assets/dialogue.png" class="dialogue" id="dialogue">
+            <img src="assets/miserySpotify.png" class="spotifyMisery" id="spotifyMisery" style="display: none;">
+        </div>
+        <div class="messagePage" style="display: none;">
+            <p class="text" id="text10">YOU GOT A MAIL!!</p>
+            <img src="assets/evelynLetter.gif" class="evelynLetter" id="evelynLetter">
+            <img src="assets/evelynLetterOpen.gif" class="evelynLetterOpen" id="evelynLetterOpen" style="display: none;">
+            <img src="assets/evelynPaperBig.png" class="evelynPaperBig" id="evelynPaperBig" style="display: none;">
+        </div>
+        <div class="editPage" style="display: none;">
+            <video id="edit1" height="600" width="300" controls>
+                <source src="assets/edit1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="edit2" height="600" width="600" controls>
+                <source src="assets/edit2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="edit3" height="600" width="600" controls>
+                <source src="assets/edit3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <script>
+            const giftPage = document.querySelector(".giftPage");
+            const menuPage = document.querySelector(".menuPage");
+            const musicPage = document.querySelector(".musicPage");
+            const messagePage = document.querySelector(".messagePage");
+            const editPage = document.querySelector(".editPage");
+            const gift = document.getElementById("giftId");
+            const yayAudio = document.getElementById("yay");
+            const camera = document.getElementById("cameraIcon");
+            const disc = document.getElementById("discIcon");
+            const paper = document.getElementById("paperIcon");
+            const musicPlayer = document.getElementById("musicPlayer");
+            const miseryAudio = document.getElementById("misery");
+            const spotifyMisery = document.getElementById("spotifyMisery");
+            const letter = document.getElementById("evelynLetter");
+            const paperBig = document.getElementById("evelynPaperBig");
+            const text1 = document.getElementById("text10");
+
+        </script>
+
+        <script>
+            gift.addEventListener("click", () => {
+            gift.src = "/assets/evelynGiftOpen.gif";
+            yayAudio.play();
+
+            setTimeout(() => {
+            giftPage.style.display = "none";
+            menuPage.style.display = "block";
+        }, 3000);
+        });
+        </script>
+
+        <script>
+            disc.addEventListener("click", () => {
+            
+
+            menuPage.style.display = "none";
+            musicPage.style.display = "block";
+            })
+            musicPlayer.addEventListener("click", () => {
+            if (miseryAudio.paused){
+                musicPlayer.src = "/assets/evelynMusicBoxSpin.gif";
+                spotifyMisery.src = "/assets/miserySpotify.png";
+                spotifyMisery.style.display = "block";
+                musicPage.style.backgroundImage = "url('assets/miseryGirl.jpg')"
+                musicPage.style.backgroundSize = "cover";
+                musicPage.style.backgroundPosition = "center";  
+                miseryAudio.play();
+                
+            }else{
+                miseryAudio.pause();
+                musicPlayer.src = "/assets/evelynMusicBox.gif";
+                spotifyMisery.src = "/assets/miserySpotifyPause.png";
+                
+            }})
+
+        </script>
+
+        <script>
+            paper.addEventListener("click", () => {
+            
+
+            menuPage.style.display = "none";
+            messagePage.style.display = "block";
+            })
+            letter.addEventListener("click", () => {
+            letter.src = "/assets/evelynLetterOpen.gif";    
+            
+
+            setTimeout(() => {
+            paperBig.style.display = "block";
+            yayAudio.play();
+            text1.style.display = "none";
+        }, 3000);
+            })
+        </script>
+        <script>
+            camera.addEventListener("click", () => {
+            
+            menuPage.style.display = "none";
+            editPage.style.display = "block";
+            })
+        </script>
+
+    </body>
+</html>

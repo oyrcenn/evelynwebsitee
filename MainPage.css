@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Silkscreen";
+    src: url("fonts/slkscr.ttf") format("truetype");
+}
+body{
+    background-image: url(assets/pattern.jpg);
+}
+.giftPage{
+    width: 1750px;
+    height: 800px;
+    background-color: rgb(108, 209, 175);
+    border: 5px solid white;
+
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    align-items: center;
+}
+.menuPage{
+    width: 1750px;
+    height: 800px;
+    background-color: rgb(108, 209, 175);
+    border: 5px solid white;
+
+    top: 0%;    
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    align-items: center;
+}
+.musicPage{
+    width: 1750px;
+    height: 800px;
+    background-color: rgb(108, 209, 175);
+    border: 5px solid white;
+
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    align-items: center;
+    transition: background 15s   ease-in-out;
+}
+.messagePage{
+    width: 1750px;
+    height: 800px;
+    background-color: rgb(108, 209, 175);
+    border: 5px solid white;
+
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    align-items: center;
+}
+.editPage{
+    width: 1750px;
+    height: 800px;
+    background-color: rgb(108, 209, 175);
+    border: 5px solid white;
+
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    align-items: center;
+}
+.gift{
+    
+    top: 27%;
+    left: 39%;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    align-items: center;
+    image-rendering: pixelated;
+}
+.menuIcon{
+    position: relative;
+    top: 40%;
+    left: 17%;
+
+}
+#musicPlayer{
+    image-rendering: pixelated;
+
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    align-items: center;
+}
+#dialogue{
+    image-rendering: pixelated;
+
+    position: fixed;
+    top: 0%;
+    left: 55%;
+}
+#spotifyMisery{
+    image-rendering: pixelated;
+
+    position: absolute;
+    left: 37%;
+    top: 65%;
+}
+#evelynLetter{
+    position: absolute;
+    top: 14%;
+    left: 35%;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+#evelynPaperBig{
+    image-rendering: pixelated;
+
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    height: auto;
+    width: 50%;
+}
+.text{
+    font-family: "Silkscreen", sans-serif;
+    color: white;
+}
+#text1{
+    font-size: 59px;
+    
+    
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+}
+#text2{
+    font-size: 59px;
+    
+    position: absolute;
+     top: 70%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text3{
+    font-size: 80px;
+    
+    
+    position: absolute;
+    bottom: 80%;
+    left: 26%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+}
+#text4{
+    font-size: 40px;
+    
+    position: absolute;
+    top: 8%;
+    left: 625PX;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text5{
+    font-size: 25px;
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text6{
+    font-size: 25px;
+    
+    position: absolute;
+    top: 77%;
+    left: 27%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text7{
+    font-size: 25px;
+    
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text8{
+    font-size: 25px;
+    
+    position: absolute;
+    top: 77%;
+    left: 72%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text9{
+    font-size: 30px;
+    color: rgb(22, 61, 48);
+    
+    position: absolute;
+    top: 20%;
+    left: 73%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
+#text10{
+    font-size: 50px;
+    color: white;
+    
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    align-items: center;
+}
