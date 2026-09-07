@@ -71,7 +71,7 @@
 
         <script>
             gift.addEventListener("click", () => {
-            gift.src = "/assets/evelynGiftOpen.gif";
+            gift.src = "assets/evelynGiftOpen.gif";
             yayAudio.play();
 
             setTimeout(() => {
@@ -90,8 +90,8 @@
             })
             musicPlayer.addEventListener("click", () => {
             if (miseryAudio.paused){
-                musicPlayer.src = "/assets/evelynMusicBoxSpin.gif";
-                spotifyMisery.src = "/assets/miserySpotify.png";
+                musicPlayer.src = "assets/evelynMusicBoxSpin.gif";
+                spotifyMisery.src = "assets/miserySpotify.png";
                 spotifyMisery.style.display = "block";
                 musicPage.style.backgroundImage = "url('assets/miseryGirl.jpg')"
                 musicPage.style.backgroundSize = "cover";
@@ -100,8 +100,8 @@
                 
             }else{
                 miseryAudio.pause();
-                musicPlayer.src = "/assets/evelynMusicBox.gif";
-                spotifyMisery.src = "/assets/miserySpotifyPause.png";
+                musicPlayer.src = "assets/evelynMusicBox.gif";
+                spotifyMisery.src = "assets/miserySpotifyPause.png";
                 
             }})
 
@@ -115,7 +115,7 @@
             messagePage.style.display = "block";
             })
             letter.addEventListener("click", () => {
-            letter.src = "/assets/evelynLetterOpen.gif";    
+            letter.src = "assets/evelynLetterOpen.gif";    
             
 
             setTimeout(() => {
